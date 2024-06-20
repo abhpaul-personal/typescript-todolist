@@ -4,33 +4,6 @@ import InputField from './components/InputField';
 import { ToDo } from './model';
 import ToDoList from './components/ToDoList';
 
-// let name:string;
-// let age:number | string;
-
-// let isStudent:boolean;
-// let hobbies:string[];
-// let role:[number, string]; //tuple
-//Object
-// type Person = {
-//   name:String,
-//   age?:number
-// }
-
-// interface Person {
-//   name:String,
-//   age?:number
-// }
-
-// interface Guy extends Person{
-//   profession:String; 
-// }
-
-// let person:Person;
-
-// person = {
-//   name:"Abhijit",
-// }
-
 const App: React.FC = () => {
 
   const [toDo, setToDo] = useState<string>("");
