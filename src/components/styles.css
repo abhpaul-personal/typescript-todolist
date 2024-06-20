@@ -1,0 +1,97 @@
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.input-box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px #4681f4;
+}
+
+.input-box:focus {
+    box-shadow: 0 0 10px 1000px #4681f4;
+    outline:none;
+}
+
+.input-submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    transition: 02s all;
+    box-shadow: 0 0 10px black;
+}
+
+.input-submit:hover {
+    background-color: #386be2;
+}
+
+.input-submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black; 
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.single-to-do {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url(https://img.freepik.com/free-photo/full-frame-shot-yellow-paper-textured-background_23-2147878563.jpg?w=1480&t=st=1718894588~exp=1718895188~hmac=73ed561af0f2acefbd99312281e48cfef5246784feff6ef33ce83d40a67ae751);
+}
+
+.todolist-single-text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.todolist-single-text:focus {
+   outline: none;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {    
+    .single-to-do {
+        width:40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+    .todo-list {
+       width:95%;
+    }
+    
+    .single-to-do {
+        width:100%;
+    }
+}
+
